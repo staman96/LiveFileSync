@@ -13,7 +13,7 @@ Execution command for each client:
 
    Each client uses its input directory to contribute data to all other's mirror directories. In order for the program to work at least 2 clients must be executed simultaneously and in the end each client must have all the files from every client:
    
-./mirror_client -n id1 -c common_dir -i input_dir1 -m mirror_dir1 -b buffer_size -l log_file1
+./mirror_client -n id1 -c common_dir -i input_dir1 -m mirror_dir1 -b buffer_size -l log_file1  
 ./mirror_client -n id2 -c common_dir -i input_dir2 -m mirror_dir2 -b buffer_size -l log_file2
 
 The common_dir is used for the processes's communication (pipes and client IDs) and must the same for every client.
